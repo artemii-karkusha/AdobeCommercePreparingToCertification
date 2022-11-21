@@ -1,0 +1,20 @@
+{
+  "name": "artemii-karkusha/module-adobe-commerce-preparing-to-certification1",
+  "version": "1.0.0",
+  "description": "Preparing to certifications: AD0-E717, AD0-E716.",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "license": [
+    "Open Software License (OSL)"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "ArtemiiKarkusha\\AdobeCommercePreparingToCertification\\": ""
+    }
+  }
+}
