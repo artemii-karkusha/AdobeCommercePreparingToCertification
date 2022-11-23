@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <!--[1.1]-->
+                <!--Resource controls a menu item and all resources below. -->
+                <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu" title="Custom Module Menu"
+                          sortOrder="10">
+                    <!--Resources control some actions our module. -->
+                    <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::create" title="Create"
+                              sortOrder="50"/>
+                    <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delete" title="Delete"
+                              sortOrder="100"/>
+                    <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view" title="View"
+                              sortOrder="150">
+                        <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view_additional"
+                                  title="View Additional Information" sortOrder="10"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

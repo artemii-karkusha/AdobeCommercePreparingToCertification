@@ -1,20 +1,25 @@
 {
-  "name": "artemii-karkusha/module-adobe-commerce-preparing-to-certification1",
-  "version": "1.0.0",
-  "description": "Preparing to certifications: AD0-E717, AD0-E716.",
-  "type": "magento2-module",
-  "require": {
-    "magento/framework": "*"
-  },
-  "license": [
-    "Open Software License (OSL)"
-  ],
-  "autoload": {
-    "files": [
-      "registration.php"
+    "name": "artemii-karkusha/module-adobe-commerce-preparing-to-certification",
+    "version": "1.0.0",
+    "description": "Preparing to certification the AD0-E717",
+    "type": "magento2-module",
+    "require": {
+        "php": "~8.1.0",
+        "magento/framework": "~2.4.5",
+        "magento/module-backend": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "license": [
+        "Open Software License (OSL)"
     ],
-    "psr-4": {
-      "ArtemiiKarkusha\\AdobeCommercePreparingToCertification\\": ""
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ArtemiiKarkusha\\AdobeCommercePreparingToCertification\\": ""
+        }
     }
-  }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+
+        <!--[1.1]-->
+        <add id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"
+             title="Custom Module Menu"
+             module="ArtemiiKarkusha_AdobeCommercePreparingToCertification"
+             sortOrder="10"
+             resource="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"/>
+
+        <add id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view"
+             title="View"
+             module="ArtemiiKarkusha_AdobeCommercePreparingToCertification"
+             sortOrder="10"
+             parent="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"
+             action="preparingtocertification/view/index"
+             resource="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view"/>
+    </menu>
+</config>

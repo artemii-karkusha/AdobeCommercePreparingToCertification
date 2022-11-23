@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!--1.1-->
+    <route url="/V1/admin/create" method="POST">
+        <service
+            class="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\CreateSomethingInterface"
+            method="execute"/>
+        <resources>
+            <resource ref="ArtemiiKarkusha_AdobeCommercePreparingToCertification::create"/>
+        </resources>
+    </route>
+</routes>

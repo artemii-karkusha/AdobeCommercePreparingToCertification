@@ -13,7 +13,15 @@
 
 ### Section 1: Working with Admin (5.2%)
 
- 1. Describe how the ACL works with roles and resources  
+ 1. Describe how the ACL works with roles and resources.   
+ Example in Code:  
+ [acl.xml](etc/acl.xml?plain=1#L9)  
+ [menu.xml](etc/adminhtml/menu.xml?plain=1#L8)  
+ [Controller](Controller/Adminhtml/View/Index.php?plain=1#L19)  
+ [Block Restrictions](view/adminhtml/layout/preparingtocertification_view_index.xml?plain=1#L17)    
+ [Restrict web API access](etc/webapi.xml?plain=1#L7)  
+ Adobe docs:  
+ [Create an access control list (ACL) rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/#step-1-define-the-custom-resources)
  2. Identify the components to use when creating or modifying the admin grid/form  
  3. Identify the files to use when creating a store/admin config and menu items  
 
