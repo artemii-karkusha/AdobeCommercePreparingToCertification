@@ -3,7 +3,10 @@
 <!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\CreateSomethingInterface"
                 type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Api\CreateSomething"/>
+    <!--1.2-->
+    <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\Data\DeliveryServiceInterface"
+                type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Data\DeliveryServiceData"/>
 </config>

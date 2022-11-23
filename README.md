@@ -16,13 +16,24 @@
  1. Describe how the ACL works with roles and resources.   
  Example in Code:  
  [acl.xml](etc/acl.xml?plain=1#L9)  
- [menu.xml](etc/adminhtml/menu.xml?plain=1#L8)  
+ [menu.xml](etc/adminhtml/menu.xml?plain=1#L13)  
  [Controller](Controller/Adminhtml/View/Index.php?plain=1#L19)  
- [Block Restrictions](view/adminhtml/layout/preparingtocertification_view_index.xml?plain=1#L17)    
- [Restrict web API access](etc/webapi.xml?plain=1#L7)  
+ [Block Restrictions](view/adminhtml/layout/preparingtocertification_view_index.xml?plain=1#L13)    
+ [Restrict web API access](etc/webapi.xml?plain=1#L11)  
+ [Ui component Restrictions](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L33)  
  Adobe docs:  
  [Create an access control list (ACL) rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/#step-1-define-the-custom-resources)
  2. Identify the components to use when creating or modifying the admin grid/form  
+ Example in Code:  
+ [Create layout with ui_component](view/adminhtml/layout/delivery_service_deliveryservice_index.xml?plain=1#L8)  
+ [Create ui_component the listing](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L7)  
+ [Create ui_component the form](view/adminhtml/ui_component/delivery_service_form.xml?plain=1#L6)  
+ Adobe docs:  
+ [Introduction to UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/)  
+ [Form component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/)  
+ [Listing (grid) component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/)  
+ [Add an Admin grid](https://developer.adobe.com/commerce/php/development/components/add-admin-grid/)
+
  3. Identify the files to use when creating a store/admin config and menu items  
 
 ### Section 2: Architecture (28.6%)

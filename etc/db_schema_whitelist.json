@@ -1,0 +1,18 @@
+{
+  "delivery_service": {
+    "column": {
+      "entity_id": true,
+      "name": true,
+      "status": true,
+      "phone": true,
+      "created_at": true,
+      "updated_at": true
+    },
+    "index": {
+      "DELIVERY_SERVICE_ENTITY_ID": true
+    },
+    "constraint": {
+      "PRIMARY": true
+    }
+  }
+}

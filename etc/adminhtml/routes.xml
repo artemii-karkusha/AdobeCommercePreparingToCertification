@@ -7,5 +7,8 @@
         <route id="preparingtocertification" frontName="preparingtocertification">
             <module name="ArtemiiKarkusha_AdobeCommercePreparingToCertification"/>
         </route>
+        <route id="delivery_service" frontName="delivery_service">
+            <module name="ArtemiiKarkusha_AdobeCommercePreparingToCertification"/>
+        </route>
     </router>
 </config>

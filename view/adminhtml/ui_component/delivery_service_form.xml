@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">delivery_service_form.delivery_service_form_data_source</item>
+        </item>
+        <item name="label" xsi:type="string" translate="true">Delivery Service Form</item>
+        <item name="template" xsi:type="string">templates/form/collapsible</item>
+    </argument>
+    <settings>
+        <namespace>delivery_service_form</namespace>
+        <dataScope>data.general</dataScope>
+        <deps>
+            <dep>delivery_service_form.delivery_service_form_data_source</dep>
+        </deps>
+        <buttons>
+            <button name="save"
+                    class="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Block\Form\DeliveryService\Save"/>
+            <button name="back"
+                    class="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Block\Form\DeliveryService\Back"/>
+            <button name="delete"
+                    class="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Block\Form\DeliveryService\Delete"/>
+        </buttons>
+    </settings>
+    <dataSource name="delivery_service_form_data_source" component="Magento_Ui/js/form/provider">
+        <settings>
+            <submitUrl path="delivery_service/deliveryservice/save"/>
+        </settings>
+        <dataProvider
+                class="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Ui\DataProvider\DeliveryServiceDataProvider"
+                name="delivery_service_form_data_source">
+            <settings>
+                <requestFieldName>entity_id</requestFieldName>
+                <primaryFieldName>entity_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <fieldset name="general" sortOrder="10">
+        <settings>
+            <label translate="true">General</label>
+        </settings>
+        <field name="entity_id" sortOrder="0" formElement="hidden">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">entity_id</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Entity ID</label>
+                <dataScope>entity_id</dataScope>
+            </settings>
+        </field>
+        <field name="name" sortOrder="00" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">name</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>string</dataType>
+                <label translate="true">Name</label>
+                <dataScope>name</dataScope>
+            </settings>
+        </field>
+        <field name="status" sortOrder="10" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">status</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>int</dataType>
+                <label translate="true">Status</label>
+                <dataScope>status</dataScope>
+            </settings>
+        </field>
+        <field name="phone" sortOrder="20" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">phone</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>string</dataType>
+                <label translate="true">Phone</label>
+                <dataScope>phone</dataScope>
+            </settings>
+        </field>
+    </fieldset>
+</form>

@@ -12,15 +12,24 @@
                           sortOrder="10">
                     <!--Resources control some actions our module. -->
                     <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::create" title="Create"
-                              sortOrder="50"/>
+                              sortOrder="10"/>
                     <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delete" title="Delete"
-                              sortOrder="100"/>
+                              sortOrder="20"/>
                     <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view" title="View"
-                              sortOrder="150">
+                              sortOrder="30">
                         <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view_additional"
                                   title="View Additional Information" sortOrder="10"/>
                     </resource>
+                    <!--1.2-->
+                    <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_services"
+                        title="Delivery Services"
+                        sortOrder="40">
+                        <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_services_list"
+                                  title="Delivery Services - List" sortOrder="10"/>
+                    </resource>
                 </resource>
+                <resource id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management"
+                          title="Delivery Service Management"/>
             </resource>
         </resources>
     </acl>

@@ -12,12 +12,19 @@
              sortOrder="10"
              resource="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"/>
 
-        <add id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view"
-             title="View"
-             module="ArtemiiKarkusha_AdobeCommercePreparingToCertification"
-             sortOrder="10"
-             parent="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"
-             action="preparingtocertification/view/index"
-             resource="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view"/>
+            <add id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view"
+                 title="View"
+                 module="ArtemiiKarkusha_AdobeCommercePreparingToCertification"
+                 sortOrder="10"
+                 parent="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"
+                 action="preparingtocertification/view/index"
+                 resource="ArtemiiKarkusha_AdobeCommercePreparingToCertification::view"/>
+
+            <!--delivery services 1.2-->
+            <add id="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management" sortOrder="50"
+                 title="Delivery Service Management" module="ArtemiiKarkusha_AdobeCommercePreparingToCertification"
+                 parent="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"
+                 resource="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management"
+                 translate="title" action="delivery_service/deliveryservice/index"/>
     </menu>
 </config>
