@@ -39,8 +39,8 @@
  Example in Code:  
  [system.xml](etc/adminhtml/system.xml)  
  [menu.xml](etc/adminhtml/menu.xml)  
- [dependsOnConfig](etc/adminhtml/menu.xml?plain=1#L29) **It is very helpful attribute which helps to control visibility of menu item with config.**  
- Adobe docs:  
+ [dependsOnConfig](etc/adminhtml/menu.xml?plain=1#L29) *It is very helpful attribute which helps to control visibility of menu item with config.*  
+ **Adobe docs**:  
  [system.xml](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-systemxml.html)
 
 ### Section 2: Architecture (28.6%)
