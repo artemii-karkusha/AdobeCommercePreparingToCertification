@@ -21,6 +21,7 @@
  [Block Restrictions](view/adminhtml/layout/preparingtocertification_view_index.xml?plain=1#L13)    
  [Restrict web API access](etc/webapi.xml?plain=1#L11)  
  [Ui component Restrictions](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L33)  
+ [system.xml restriction](etc/adminhtml/system.xml?plain=1#L14)
  Adobe docs:  
  [Create an access control list (ACL) rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/#step-1-define-the-custom-resources)
  2. Identify the components to use when creating or modifying the admin grid/form  
@@ -34,7 +35,13 @@
  [Listing (grid) component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/)  
  [Add an Admin grid](https://developer.adobe.com/commerce/php/development/components/add-admin-grid/)
 
- 3. Identify the files to use when creating a store/admin config and menu items  
+ 3. Identify the files to use when creating a store/admin config and menu items
+ Example in Code:  
+ [system.xml](etc/adminhtml/system.xml)  
+ [menu.xml](etc/adminhtml/menu.xml)  
+ [dependsOnConfig](etc/adminhtml/menu.xml?plain=1#L29) **It is very helpful attribute which helps to control visibility of menu item with config.**  
+ Adobe docs:  
+ [system.xml](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-systemxml.html)
 
 ### Section 2: Architecture (28.6%)
 

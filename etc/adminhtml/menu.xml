@@ -25,6 +25,7 @@
                  title="Delivery Service Management" module="ArtemiiKarkusha_AdobeCommercePreparingToCertification"
                  parent="ArtemiiKarkusha_AdobeCommercePreparingToCertification::menu"
                  resource="ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management"
-                 translate="title" action="delivery_service/deliveryservice/index"/>
+                 translate="title" action="delivery_service/deliveryservice/index"
+                 dependsOnConfig="delivery_service_management/examples_of_all_field_types/field_type_is_select_yesno"/>
     </menu>
 </config>

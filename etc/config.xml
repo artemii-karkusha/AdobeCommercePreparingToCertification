@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <delivery_service_management>
+            <examples_of_all_field_types>
+                <field_type_is_select_yesno>1</field_type_is_select_yesno>
+            </examples_of_all_field_types>
+        </delivery_service_management>
+    </default>
+</config>

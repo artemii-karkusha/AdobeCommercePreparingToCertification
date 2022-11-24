@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="AdobeCommercePreparingToCertification" translate="label" sortOrder="10">
+            <label>AdobeCommercePreparingToCertification</label>
+        </tab>
+        <section id="delivery_service_management" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10"
+                 translate="label">
+            <label>Delivery Service Management</label>
+            <tab>AdobeCommercePreparingToCertification</tab>
+            <resource>ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management</resource>
+
+            <group id="examples_of_all_field_types" translate="label comment" sortOrder="10" showInDefault="1"
+                   showInWebsite="0" showInStore="1">
+                <label>Examples of all field types</label>
+                <comment>Translated comment</comment>
+                <field id="field_type_is_text" translate="label" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is text</label>
+                </field>
+
+                <field id="field_type_is_textarea" translate="label" type="textarea" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is textarea</label>
+                </field>
+
+                <field id="field_type_is_select_yesno" translate="label" type="select" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is select (Yesno)</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="field_type_is_select_list" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is select</label>
+                    <source_model>ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Config\Source\ListOfValues</source_model>
+                </field>
+
+                <field id="field_type_is_multiselect" translate="label" type="multiselect" sortOrder="50"
+                       showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is multiselect</label>
+                    <source_model>ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Config\Source\ListOfValues</source_model>
+                </field>
+
+                <field id="field_type_is_button" translate="label" type="button" sortOrder="60" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is button</label>
+                    <frontend_model>ArtemiiKarkusha\AdobeCommercePreparingToCertification\Block\Block\System\Config\Form\Field\ExampleOfButton</frontend_model>
+                </field>
+
+                <field id="field_type_is_obscure" translate="label" type="obscure" sortOrder="70" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is obscure</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+
+                <field id="field_type_is_password" translate="label" type="password" sortOrder="80" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is password</label>
+                </field>
+
+                <field id="field_type_is_file" translate="label" type="file" sortOrder="90" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is file</label>
+                </field>
+
+                <field id="field_type_is_label" translate="label" type="label" sortOrder="100" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is label</label>
+                    <frontend_model>Magento\Config\Block\System\Config\Form\Field\Notification</frontend_model>
+                </field>
+
+                <field id="sallowspecific" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Ship to Applicable Countries</label>
+                    <frontend_class>shipping-applicable-country</frontend_class>
+                    <source_model>Magento\Shipping\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="120" showInDefault="1" showInWebsite="1">
+                    <label>Ship to Specific Countries</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                    <can_be_empty>1</can_be_empty>
+                    <depends>
+                        <field id="sallowspecific">1</field>
+                    </depends>
+                </field>
+
+                <field id="field_type_is_image" translate="label" type="image" sortOrder="130" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is image</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
+                    <upload_dir config="system/filesystem/media" scope_info="1">field_type_is_image</upload_dir>
+                    <base_url type="media" scope_info="1">field_type_is_image</base_url>
+                </field>
+
+                <field id="field_type_is_note" translate="label" type="note" sortOrder="140" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Field type is note</label>
+                    <frontend_model>ArtemiiKarkusha\AdobeCommercePreparingToCertification\Block\Block\System\Config\Form\Field\FieldTypeIsNote</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
