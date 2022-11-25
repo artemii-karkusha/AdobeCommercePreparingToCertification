@@ -14,39 +14,53 @@
 ### Section 1: Working with Admin (5.2%)
 
  1. Describe how the ACL works with roles and resources.   
- Example in Code:  
- [acl.xml](etc/acl.xml?plain=1#L9)  
- [menu.xml](etc/adminhtml/menu.xml?plain=1#L13)  
- [Controller](Controller/Adminhtml/View/Index.php?plain=1#L19)  
- [Block Restrictions](view/adminhtml/layout/preparingtocertification_view_index.xml?plain=1#L13)    
- [Restrict web API access](etc/webapi.xml?plain=1#L11)  
- [Ui component Restrictions](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L33)  
- [system.xml restriction](etc/adminhtml/system.xml?plain=1#L14)
- Adobe docs:  
- [Create an access control list (ACL) rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/#step-1-define-the-custom-resources)
+ - Example in Code:  
+   - [acl.xml](etc/acl.xml?plain=1#L9)  
+   - [menu.xml](etc/adminhtml/menu.xml?plain=1#L13)  
+   - [Controller](Controller/Adminhtml/View/Index.php?plain=1#L19)  
+   - [Block Restrictions](view/adminhtml/layout/preparingtocertification_view_index.xml?plain=1#L13)    
+   - [Restrict web API access](etc/webapi.xml?plain=1#L11)  
+   - [Ui component Restrictions](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L33)  
+   - [system.xml restriction](etc/adminhtml/system.xml?plain=1#L14)  
+ - Adobe docs:  
+   - [Create an access control list (ACL) rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/#step-1-define-the-custom-resources)
  2. Identify the components to use when creating or modifying the admin grid/form  
- Example in Code:  
- [Create layout with ui_component](view/adminhtml/layout/delivery_service_deliveryservice_index.xml?plain=1#L8)  
- [Create ui_component the listing](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L7)  
- [Create ui_component the form](view/adminhtml/ui_component/delivery_service_form.xml?plain=1#L6)  
- Adobe docs:  
- [Introduction to UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/)  
- [Form component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/)  
- [Listing (grid) component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/)  
- [Add an Admin grid](https://developer.adobe.com/commerce/php/development/components/add-admin-grid/)
+ - Example in Code:  
+   - [Create layout with ui_component](view/adminhtml/layout/delivery_service_deliveryservice_index.xml?plain=1#L8)  
+   - [Create ui_component the listing](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L7)  
+   - [Create ui_component the form](view/adminhtml/ui_component/delivery_service_form.xml?plain=1#L6)  
+ - Adobe docs:  
+   - [Introduction to UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/)  
+   - [Form component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/)  
+   - [Listing (grid) component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/)  
+   - [Add an Admin grid](https://developer.adobe.com/commerce/php/development/components/add-admin-grid/)
 
  3. Identify the files to use when creating a store/admin config and menu items
- Example in Code:  
- [system.xml](etc/adminhtml/system.xml)  
- [menu.xml](etc/adminhtml/menu.xml)  
- [dependsOnConfig](etc/adminhtml/menu.xml?plain=1#L29) *It is very helpful attribute which helps to control visibility of menu item with config.*  
- **Adobe docs**:  
- [system.xml](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-systemxml.html)
+ - Example in Code:  
+   - [system.xml](etc/adminhtml/system.xml)  
+   - [menu.xml](etc/adminhtml/menu.xml)  
+   - [dependsOnConfig](etc/adminhtml/menu.xml?plain=1#L29) *It is very helpful attribute which helps to control visibility of menu item with config.*  
+ - Adobe docs
+   - [system.xml](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-systemxml.html)
 
 ### Section 2: Architecture (28.6%)
 
  1. Describe Magento file structure  
+ - Docs:  
+   - [File structures of Module, Theme, Language package](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)  
+   - [Magento 2 Folder Structure](https://meetanshi.com/blog/magento-2-folder-structure/)
  2. Describe Magento CLI commands  
+ - Example in Code:
+   - [Example console command](Console/Command/DeliveryService/Create.php)
+   - [di.xml](etc/di.xml?plain=1#L13)
+   ```sh
+   bin/magento preparingToCertification:deliveryService:create --example_required_option=123 --example_none_option
+   ```
+ - Docs:
+   - [Command-line tool](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/config-cli.html?lang=en)
+   - [Command naming guidelines](https://developer.adobe.com/commerce/php/development/cli-commands/naming-guidelines/)
+   - [Create a custom command](https://developer.adobe.com/commerce/php/development/cli-commands/custom/)
+   - [Common commands](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/common-cli-commands.html?lang=en)
  3. Describe cron functionality  
  4. Given a scenario, describe usage of the di.xml  
  5. Given a scenario, create controllers  

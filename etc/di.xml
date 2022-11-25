@@ -9,4 +9,13 @@
     <!--1.2-->
     <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\Data\DeliveryServiceInterface"
                 type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Data\DeliveryServiceData"/>
+    <!--2.2-->
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="createDeliveryService"
+                      xsi:type="object">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Console\Command\DeliveryService\Create</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
