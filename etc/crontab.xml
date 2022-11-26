@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="delivery_service">
+        <!--2.3-->
+        <job name="ak_update_information_about_delivery_service"
+             instance="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Cron\UpdateInformationAboutDeliveryService"
+             method="execute">
+            <schedule>0 0 * * *</schedule>
+        </job>
+        <job name="ak_upload_information_about_items_to_delivery_services"
+             instance="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Cron\UploadInformationAboutItemsToDeliveryServices"
+             method="execute">
+            <config_path>
+                delivery_service_management/needed_configs_for_code_examples/scheduled_cron_time_for_upload_information_about_items_to_delivery_services
+            </config_path>
+        </job>
+    </group>
+</config>

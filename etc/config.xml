@@ -8,6 +8,11 @@
             <examples_of_all_field_types>
                 <field_type_is_select_yesno>1</field_type_is_select_yesno>
             </examples_of_all_field_types>
+            <needed_configs_for_code_examples>
+                <scheduled_cron_time_for_upload_information_about_items_to_delivery_services>
+                    10 * * * *
+                </scheduled_cron_time_for_upload_information_about_items_to_delivery_services>
+            </needed_configs_for_code_examples>
         </delivery_service_management>
     </default>
 </config>

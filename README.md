@@ -14,7 +14,7 @@
 ### Section 1: Working with Admin (5.2%)
 
  1. Describe how the ACL works with roles and resources.   
- - Example in Code:  
+ - Examples in Code:  
    - [acl.xml](etc/acl.xml?plain=1#L9)  
    - [menu.xml](etc/adminhtml/menu.xml?plain=1#L13)  
    - [Controller](Controller/Adminhtml/View/Index.php?plain=1#L19)  
@@ -25,7 +25,7 @@
  - Adobe docs:  
    - [Create an access control list (ACL) rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/#step-1-define-the-custom-resources)
  2. Identify the components to use when creating or modifying the admin grid/form  
- - Example in Code:  
+ - Examples in Code:  
    - [Create layout with ui_component](view/adminhtml/layout/delivery_service_deliveryservice_index.xml?plain=1#L8)  
    - [Create ui_component the listing](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L7)  
    - [Create ui_component the form](view/adminhtml/ui_component/delivery_service_form.xml?plain=1#L6)  
@@ -36,7 +36,7 @@
    - [Add an Admin grid](https://developer.adobe.com/commerce/php/development/components/add-admin-grid/)
 
  3. Identify the files to use when creating a store/admin config and menu items
- - Example in Code:  
+ - Examples in Code:  
    - [system.xml](etc/adminhtml/system.xml)  
    - [menu.xml](etc/adminhtml/menu.xml)  
    - [dependsOnConfig](etc/adminhtml/menu.xml?plain=1#L29) *It is very helpful attribute which helps to control visibility of menu item with config.*  
@@ -50,7 +50,7 @@
    - [File structures of Module, Theme, Language package](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)  
    - [Magento 2 Folder Structure](https://meetanshi.com/blog/magento-2-folder-structure/)
  2. Describe Magento CLI commands  
- - Example in Code:
+ - Examples in Code:
    - [Example console command](Console/Command/DeliveryService/Create.php)
    - [di.xml](etc/di.xml?plain=1#L13)
    ```sh
@@ -62,6 +62,12 @@
    - [Create a custom command](https://developer.adobe.com/commerce/php/development/cli-commands/custom/)
    - [Common commands](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/common-cli-commands.html?lang=en)
  3. Describe cron functionality  
+ - Examples in Code:
+   - [Cron jobs with static and flexible scheduled time](etc/crontab.xml?plain=1#L7)
+   - [cron_groups.xml](etc/cron_groups.xml)
+ - Docs:
+   - [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 
+   - [Magento 2 Cron Job: How to Create, Set up, and Configure It in Easy Steps](https://www.cloudways.com/blog/setup-magento-cron-job/)
  4. Given a scenario, describe usage of the di.xml  
  5. Given a scenario, create controllers  
  6. Describe module structure  

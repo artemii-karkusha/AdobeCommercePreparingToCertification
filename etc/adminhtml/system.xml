@@ -74,13 +74,15 @@
                     <frontend_model>Magento\Config\Block\System\Config\Form\Field\Notification</frontend_model>
                 </field>
 
-                <field id="sallowspecific" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" canRestore="1">
+                <field id="sallowspecific" translate="label" type="select" sortOrder="110" showInDefault="1"
+                       showInWebsite="1" canRestore="1">
                     <label>Ship to Applicable Countries</label>
                     <frontend_class>shipping-applicable-country</frontend_class>
                     <source_model>Magento\Shipping\Model\Config\Source\Allspecificcountries</source_model>
                 </field>
 
-                <field id="specificcountry" translate="label" type="multiselect" sortOrder="120" showInDefault="1" showInWebsite="1">
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="120" showInDefault="1"
+                       showInWebsite="1">
                     <label>Ship to Specific Countries</label>
                     <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
                     <can_be_empty>1</can_be_empty>
@@ -101,6 +103,16 @@
                        showInWebsite="1" showInStore="1">
                     <label>Field type is note</label>
                     <frontend_model>ArtemiiKarkusha\AdobeCommercePreparingToCertification\Block\Block\System\Config\Form\Field\FieldTypeIsNote</frontend_model>
+                </field>
+            </group>
+
+            <group id="needed_configs_for_code_examples" translate="label comment" sortOrder="10" showInDefault="1">
+                <label>Needed configs for code examples</label>
+                <!--2.3-->
+                <field id="scheduled_cron_time_for_upload_information_about_items_to_delivery_services"
+                       translate="label" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Scheduled Cron Time For Upload Information About Items To Delivery Services</label>
                 </field>
             </group>
         </section>
