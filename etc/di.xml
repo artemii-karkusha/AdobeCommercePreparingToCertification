@@ -18,4 +18,52 @@
             </argument>
         </arguments>
     </type>
+
+    <!--2.4-->
+    <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\SimpleInterface"
+                type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\SimpleClass"/>
+
+    <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface"
+                type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDIUsing"/>
+
+    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDIUsing">
+        <arguments>
+            <!-- Pass simple string -->
+            <argument name="stringParam" xsi:type="string">someStringValue</argument>
+            <!-- Pass true -->
+            <argument name="boolParam" xsi:type="boolean">1</argument>
+            <!-- Pass 1 -->
+            <argument name="intParam" xsi:type="number">1</argument>
+            <!-- Pass application init argument, named by constant value -->
+            <argument name="globalInitParam" xsi:type="init_parameter">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface::SOME_CONSTANT</argument>
+            <!-- Pass constant value -->
+            <argument name="constantParam" xsi:type="const">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface::SOME_CONSTANT</argument>
+            <!-- Pass array -->
+            <argument name="arrayParam" xsi:type="array">
+                <!-- First element is value of constant -->
+                <item name="firstElem" xsi:type="const">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface::SOME_CONSTANT</item>
+                <!-- Second element is null -->
+                <item name="secondElem" xsi:type="null"/>
+                <!-- Pass object -->
+                <item name="objectValue" xsi:type="object">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\SimpleClass</item>
+                <!-- Third element is a subarray -->
+                <item name="thirdElem" xsi:type="array">
+                    <!-- Subarray contains scalar value -->
+                    <item name="scalarValue" xsi:type="string">ScalarValue</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!--Sensitive and system-specific configuration settings 2.4-->
+    <type name="Magento\Config\Model\Config\TypePool">
+        <arguments>
+            <argument name="sensitive" xsi:type="array">
+                <item name="delivery_service_management/examples_of_all_field_types/field_type_is_password" xsi:type="string">1</item>
+            </argument>
+            <argument name="environment" xsi:type="array">
+                <item name="delivery_service_management/needed_configs_for_code_examples/scheduled_cron_time_for_upload_information_about_items_to_delivery_services" xsi:type="string">1</item>
+            </argument>
+        </arguments>
+    </type>
 </config>

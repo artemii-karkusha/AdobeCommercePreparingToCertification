@@ -68,7 +68,22 @@
  - Docs:
    - [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 
    - [Magento 2 Cron Job: How to Create, Set up, and Configure It in Easy Steps](https://www.cloudways.com/blog/setup-magento-cron-job/)
+   - [Disable a cron job](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/crons/custom-cron-reference.html?lang=en#disable-a-cron-job)
  4. Given a scenario, describe usage of the di.xml  
+ - Examples in Code:
+   - [etc/di.xml - Argument types](etc/di.xml?plain=1#L23) 
+   - DI in GLOBAL area
+   ![DI in frontend area](docs/images/exampleHowDILokksInGlobalArea.png)
+   - [Virtual Type](etc/frontend/di.xml?plain=1#L8)
+   - [Override arguments for Frontend Area](etc/frontend/di.xml?plain=1#L17)
+   - DI in FRONTEND area
+   ![DI in frontend area](docs/images/exampleHowDILooksInFrontendArea.png)
+   - [Sensitive and system-specific configuration settings](etc/di.xml?plain=1#L58)
+  - Docs:
+   - [Dependency injection](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) 
+   - [Code Complier](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html)
+   - [Dependency injection configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#areas-and-application-entry-points)
+   - [Sensitive and system-specific configuration settings](Sensitive and system-specific configuration settings)
  5. Given a scenario, create controllers  
  6. Describe module structure  
  7. Describe index functionality  

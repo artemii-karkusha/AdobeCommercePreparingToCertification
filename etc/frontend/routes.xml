@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="ak_preparingtocertification" frontName="ak_preparingtocertification">
+            <module name="ArtemiiKarkusha_AdobeCommercePreparingToCertification"/>
+        </route>
+    </router>
+</config>

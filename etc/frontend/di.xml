@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="SimpleClassSecondWithCustomParam" type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\SimpleClassSecond">
+        <arguments>
+            <argument name="stringParam" xsi:type="string">CustomParam</argument>
+        </arguments>
+    </virtualType>
+    <!--2.4-->
+    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDIUsing">
+        <arguments>
+            <!-- Pass simple string -->
+            <argument name="stringParam" xsi:type="string">someStringValueForFrontend</argument>
+            <argument name="arrayParam" xsi:type="array">
+                <!-- First element is value of constant -->
+                <item name="firstElem" xsi:type="string">ExampleHowDIUsing-arrayParam-firstElem</item>
+                <!-- Pass object -->
+                <item name="objectValue" xsi:type="object">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\SimpleClassSecond</item>
+                <!-- Pass virtual object -->
+                <item name="SimpleClassSecondWithCustomParam" xsi:type="object">SimpleClassSecondWithCustomParam</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
