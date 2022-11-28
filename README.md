@@ -85,6 +85,11 @@
     - [Dependency injection configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#areas-and-application-entry-points)
     - [Sensitive and system-specific configuration settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
  5. Given a scenario, create controllers  
+ - Examples in Code:
+   - 
+ - Docs:
+   - [Routing](https://developer.adobe.com/commerce/php/development/components/routing/) 
+    
  6. Describe module structure  
  7. Describe index functionality  
  8. Describe localization  
