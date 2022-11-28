@@ -1,1 +1,3 @@
-changeAuthor.sh
+/.idea
+.DS_Store
+*.sh
