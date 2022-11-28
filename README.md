@@ -80,10 +80,10 @@
    ![DI in frontend area](docs/images/exampleHowDILooksInFrontendArea.png)
    - [Sensitive and system-specific configuration settings](etc/di.xml?plain=1#L58)
   - Docs:
-   - [Dependency injection](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) 
-   - [Code Complier](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html)
-   - [Dependency injection configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#areas-and-application-entry-points)
-   - [Sensitive and system-specific configuration settings](Sensitive and system-specific configuration settings)
+    - [Dependency injection](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) 
+    - [Code Complier](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html)
+    - [Dependency injection configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#areas-and-application-entry-points)
+    - [Sensitive and system-specific configuration settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
  5. Given a scenario, create controllers  
  6. Describe module structure  
  7. Describe index functionality  
