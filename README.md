@@ -86,7 +86,7 @@
     - [Sensitive and system-specific configuration settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
  5. Given a scenario, create controllers  
  - Examples in Code:
-   - 
+   - [Create a custom router](etc/di.xml?plain=1#L71)
  - Docs:
    - [Routing](https://developer.adobe.com/commerce/php/development/components/routing/) 
     
