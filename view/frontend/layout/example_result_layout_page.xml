@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <container name="root" label="Root">
+        <block class="Magento\Framework\View\Element\Text" name="example_result_layout_block">
+            <action method="setText">
+                <argument translate="true" name="text" xsi:type="string">Result Layout Block</argument>
+            </action>
+        </block>
+    </container>
+</layout>
