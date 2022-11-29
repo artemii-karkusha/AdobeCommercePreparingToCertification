@@ -23,14 +23,14 @@ class Edit extends Action implements HttpGetActionInterface
      *
      * @see _isAllowed()
      */
-    const ADMIN_RESOURCE = 'ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management';
+    public const ADMIN_RESOURCE = 'ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management';
 
     /**
      * Edit DeliveryService action.
      *
-     * @return Page|ResultInterface
+     * @inheritDoc
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         /** @var Page $resultPage */
         $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);

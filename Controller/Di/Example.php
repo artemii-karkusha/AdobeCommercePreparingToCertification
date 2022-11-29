@@ -14,6 +14,10 @@ use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingI
 
 class Example implements HttpGetActionInterface
 {
+    /**
+     * @param RawFactory $rawFactory
+     * @param ExampleHowDIUsingInterface $exampleHowDIUsing
+     */
     public function __construct(
         private RawFactory $rawFactory,
         private ExampleHowDIUsingInterface $exampleHowDIUsing
@@ -25,12 +29,14 @@ class Example implements HttpGetActionInterface
     public function execute()
     {
         $rawResponse = $this->rawFactory->create();
+
         try {
-            $exampleHowDIUsingContains = '<pre>' . json_encode((array)$this->exampleHowDIUsing, JSON_THROW_ON_ERROR);
+            $exampleHowDIUsingContains = json_encode((array)$this->exampleHowDIUsing, JSON_THROW_ON_ERROR);
             $rawResponse->setContents($exampleHowDIUsingContains);
         } catch (JsonException $jsonException) {
             $rawResponse->setContents($jsonException->getMessage());
         }
+
         return $rawResponse;
     }
 }

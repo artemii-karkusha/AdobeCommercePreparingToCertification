@@ -21,14 +21,14 @@ class Index extends Action implements HttpGetActionInterface
     /**
      * Authorization level of a basic admin session.
      */
-    const ADMIN_RESOURCE = 'ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management';
+    public const ADMIN_RESOURCE = 'ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management';
 
     /**
      * Execute action based on request and return result.
      *
-     * @return ResultInterface|ResponseInterface
+     * @inheritDoc
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
 

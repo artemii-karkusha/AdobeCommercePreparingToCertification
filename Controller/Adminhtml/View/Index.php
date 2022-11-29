@@ -11,11 +11,16 @@ namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Controller\Admin
 use Magento\Backend\App\Action\Context;
 use Magento\Backend\Model\View\Result\Page;
 use Magento\Backend\App\Action;
+use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\View\Result\PageFactory;
 
-class Index extends Action
+class Index extends Action implements HttpGetActionInterface
 {
-    /*1.1*/
+    /** 1.1
+     * Authorization level of a basic admin session
+     *
+     * @see _isAllowed()
+     */
     public const ADMIN_RESOURCE = 'ArtemiiKarkusha_AdobeCommercePreparingToCertification::view';
 
     /**

@@ -28,12 +28,7 @@ class Delete extends Action implements HttpPostActionInterface, HttpGetActionInt
      *
      * @see _isAllowed()
      */
-    const ADMIN_RESOURCE = 'ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management';
-
-    /**
-     * @var DeleteByIdCommand
-     */
-    private $deleteByIdCommand;
+    public const ADMIN_RESOURCE = 'ArtemiiKarkusha_AdobeCommercePreparingToCertification::delivery_service_management';
 
     /**
      * @param Context $context
@@ -41,18 +36,17 @@ class Delete extends Action implements HttpPostActionInterface, HttpGetActionInt
      */
     public function __construct(
         Context $context,
-        DeleteByIdCommand $deleteByIdCommand
+        private DeleteByIdCommand $deleteByIdCommand
     ) {
         parent::__construct($context);
-        $this->deleteByIdCommand = $deleteByIdCommand;
     }
 
     /**
      * Delete DeliveryService action.
      *
-     * @return ResultInterface
+     * @inheritDoc
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         /** @var ResultInterface $resultRedirect */
         $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);

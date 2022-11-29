@@ -12,6 +12,9 @@ use Magento\Framework\Model\AbstractModel;
 
 class DeliveryServiceModel extends AbstractModel
 {
+
+    public const CACHE_TAG = 'delivery_service';
+
     /**
      * @var string
      */
@@ -22,7 +25,7 @@ class DeliveryServiceModel extends AbstractModel
      *
      * @return void
      */
-    protected function _construct()
+    protected function _construct(): void
     {
         $this->_init(DeliveryServiceResource::class);
     }
