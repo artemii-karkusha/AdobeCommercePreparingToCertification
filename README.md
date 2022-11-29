@@ -1,4 +1,4 @@
-# Preparing To Certification the AD0-E717 (Adobe Commerce Professional)
+# Preparation To Certification the AD0-E717 (Adobe Commerce Professional)
 
 ## General Information
 
@@ -6,7 +6,7 @@
 > Code examples are based on questions from certification the [Adobe Certified Professional - Adobe Commerce Developer with Cloud Add-on](https://express.adobe.com/page/N9ImQqutQZ4eO/).
 
 **Author is [Artemii Karkusha](https://www.linkedin.com/in/artemiy-karkusha/).**
-
+Please, left a star if was helpful for you. Thank you. 
 
 ## Exam Objectives and Scope. Topics. 
 
