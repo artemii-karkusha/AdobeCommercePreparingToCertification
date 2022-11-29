@@ -86,12 +86,36 @@ Please, left a star if was helpful for you. Thank you.
     - [Sensitive and system-specific configuration settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
  5. Given a scenario, create controllers  
  - Examples in Code:
-   - [Create a custom router](etc/di.xml?plain=1#L71)
+   - [Create a custom router (di.xml)](etc/di.xml?plain=1#L71)
+   - [Create a custom router (Router)](Controller/CustomRouter.php)
+   - [Create a controller in admin area (Page)](Controller/Adminhtml/View/Index.php)
+   - [Create a controller in frontend area (Magento\Framework\Controller\Result\Raw)](Controller/Di/Example.php)
+   - Action classes:
+   ![Action classes](docs/images/httpMethodMap.png)
+   - Result objects:
+     - [Json](Controller/ActionsResults/Json.php)
+     - [Raw](Controller/ActionsResults/Raw.php)
+     - [Redirect](Controller/ActionsResults/Redirect.php) - redirects to another page using http status 302 (visible redirect)
+       ![Visible Redirect](docs/images/visibleRedirect.png)
+     - [Forward](Controller/ActionsResults/Forward.php) - does not trigger a new request from the browser. The URL stays the same
+     - [Layout](Controller/ActionsResults/Layout.php)
+       - [Create a new Page Type](etc/frontend/page_types.xml) 
+       - [Create layout for the page](view/frontend/layout/example_result_layout_page.xml)
+     - [Page](Controller/ActionsResults/Page.php)
+       - [Layout](view/frontend/layout/ak_preparingtocertification_actionsresults_page.xml)
+       - [Template](view/frontend/templates/actionsresults/page.phtml)
  - Docs:
-   - [Routing](https://developer.adobe.com/commerce/php/development/components/routing/) 
-    
+   - [Routing](https://developer.adobe.com/commerce/php/development/components/routing/)
  6. Describe module structure  
- 7. Describe index functionality  
+ - Docs:
+   - [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure) 
+ 7. Describe index functionality
+ - Examples in Code:
+   - [Mview config](etc/mview.xml)
+   - [Mview class](Model/Indexer/DeliveryService.php)
+ - Docs:
+   - [Indexing](https://developer.adobe.com/commerce/php/development/components/indexing/) 
+   - [Manage the indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=en)
  8. Describe localization  
  9. Describe plugin, preference, event observers, and interceptors  
  10. Describe custom module routes  
