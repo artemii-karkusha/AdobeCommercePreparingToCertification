@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
+    <view id="delivery_service"
+          class="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Indexer\DeliveryService"
+          group="indexer">
+        <subscriptions>
+            <table name="delivery_service" entity_column="entity_id"/>
+        </subscriptions>
+    </view>
+</config>
