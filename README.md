@@ -1,6 +1,6 @@
 # Preparation To Certification the AD0-E717 (Adobe Commerce Professional)
 
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/artemii-karkusha/42d1c022aa1636af8cd54952f9d8c065/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/artemii-karkusha/42d1c022aa1636af8cd54952f9d8c065/raw/clone.json&logo=github)
 
 
 ## General Information
