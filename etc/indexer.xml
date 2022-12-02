@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Indexer/etc/indexer.xsd">
+    <indexer id="delivery_service_index"
+             view_id="delivery_service"
+             class="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Indexer\DeliveryService">
+        <title>Delivery service index</title>
+        <description>Rebuild delivery service index</description>
+    </indexer>
+</config>
