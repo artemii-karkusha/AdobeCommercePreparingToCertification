@@ -114,11 +114,13 @@ Please, left a star if was helpful for you. Thank you.
    - [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure) 
  7. Describe index functionality
  - Examples in Code:
-   - [Mview config](etc/mview.xml)
-   - [Mview class](Model/Indexer/DeliveryService.php)
+   - [Create indexer](etc/indexer.xml)
+   - [Create mview config](etc/mview.xml)
+   - [Create Mview class](Model/Indexer/DeliveryService.php)
  - Docs:
    - [Indexing](https://developer.adobe.com/commerce/php/development/components/indexing/) 
    - [Manage the indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=en)
+   - [Create a custom indexer](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/)
  8. Describe localization  
  9. Describe plugin, preference, event observers, and interceptors  
  10. Describe custom module routes  
