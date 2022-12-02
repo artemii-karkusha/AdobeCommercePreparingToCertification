@@ -7,7 +7,7 @@ declare(strict_types=1);
 
 namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api;
 
-interface ExampleHowDIUsingInterface
+interface ExampleHowDiIsUsedInterface
 {
 
     public const SOME_CONSTANT = 'SOME_CONSTANT';

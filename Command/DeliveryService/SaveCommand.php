@@ -21,33 +21,15 @@ use Psr\Log\LoggerInterface;
 class SaveCommand
 {
     /**
-     * @var LoggerInterface
-     */
-    private $logger;
-
-    /**
-     * @var DeliveryServiceModelFactory
-     */
-    private $modelFactory;
-
-    /**
-     * @var DeliveryServiceResource
-     */
-    private $resource;
-
-    /**
      * @param LoggerInterface $logger
      * @param DeliveryServiceModelFactory $modelFactory
      * @param DeliveryServiceResource $resource
      */
     public function __construct(
-        LoggerInterface $logger,
-        DeliveryServiceModelFactory $modelFactory,
-        DeliveryServiceResource $resource
+        private LoggerInterface $logger,
+        private DeliveryServiceModelFactory $modelFactory,
+        private DeliveryServiceResource $resource
     ) {
-        $this->logger = $logger;
-        $this->modelFactory = $modelFactory;
-        $this->resource = $resource;
     }
 
     /**

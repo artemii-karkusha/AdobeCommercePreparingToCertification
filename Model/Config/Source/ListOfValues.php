@@ -7,7 +7,12 @@ declare(strict_types=1);
 
 namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Config\Source;
 
-class ListOfValues implements \Magento\Framework\Data\OptionSourceInterface
+use Magento\Framework\Data\OptionSourceInterface;
+
+/**
+ * Example OptionSource
+ */
+class ListOfValues implements OptionSourceInterface
 {
     /**
      * @inheritDoc

@@ -9,8 +9,10 @@ declare(strict_types=1);
 namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Indexer;
 
 use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\DeliveryServiceModel;
-use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Indexer\DeliveryService\Action\Full as PerformerOfFullIndexing;
-use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Indexer\DeliveryService\Action\Rows as PerformerOfIndexing;
+use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Indexer\DeliveryService\Action\Full
+    as PerformerOfFullIndexing;
+use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Indexer\DeliveryService\Action\Rows
+    as PerformerOfIndexing;
 use Magento\Framework\Indexer\ActionInterface as IndexerActionInterface;
 use Magento\Framework\Indexer\CacheContext;
 use Magento\Framework\Indexer\IndexerRegistry;

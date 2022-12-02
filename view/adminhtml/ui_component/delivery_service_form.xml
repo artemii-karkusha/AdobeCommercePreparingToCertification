@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <!-- @author Artemii Karkusha -->
 <!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<!--suppress XmlDefaultAttributeValue -->
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <argument name="data" xsi:type="array">

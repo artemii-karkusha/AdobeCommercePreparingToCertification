@@ -6,7 +6,9 @@
     "require": {
         "php": "~8.1.0",
         "magento/framework": "~2.4.5",
-        "magento/module-backend": "*"
+        "magento/module-backend": "*",
+        "magento/module-ui": "*",
+        "magento/module-config": "*"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"

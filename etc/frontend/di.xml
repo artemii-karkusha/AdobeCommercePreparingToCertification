@@ -11,7 +11,7 @@
         </arguments>
     </virtualType>
     <!--2.4-->
-    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDIUsing">
+    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDiIsUsed">
         <arguments>
             <!-- Pass simple string -->
             <argument name="stringParam" xsi:type="string">someStringValueForFrontend</argument>
@@ -22,6 +22,14 @@
                 <item name="objectValue" xsi:type="object">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\SimpleClassSecond</item>
                 <!-- Pass virtual object -->
                 <item name="SimpleClassSecondWithCustomParam" xsi:type="object">SimpleClassSecondWithCustomParam</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Controller\ActionsResults\Layout">
+        <arguments>
+            <argument name="handles" xsi:type="array">
+                <item name="exampleInjectedHandleName" xsi:type="string">example_result_layout_page</item>
             </argument>
         </arguments>
     </type>
