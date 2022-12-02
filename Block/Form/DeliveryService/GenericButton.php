@@ -17,22 +17,16 @@ use Magento\Framework\UrlInterface;
 class GenericButton
 {
     /**
-     * @var Context
-     */
-    private $context;
-
-    /**
      * @var UrlInterface
      */
-    private $urlBuilder;
+    private UrlInterface $urlBuilder;
 
     /**
      * @param Context $context
      */
     public function __construct(
-        Context $context
+        private Context $context
     ) {
-        $this->context = $context;
         $this->urlBuilder = $context->getUrlBuilder();
     }
 

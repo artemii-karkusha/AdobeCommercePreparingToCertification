@@ -34,7 +34,8 @@ class GetListQuery
         private DeliveryServiceDataMapper $entityDataMapper,
         private SearchCriteriaBuilder $searchCriteriaBuilder,
         private SearchResultsInterfaceFactory $searchResultFactory
-    ) {}
+    ) {
+    }
 
     /**
      * Get DeliveryService list by search criteria.

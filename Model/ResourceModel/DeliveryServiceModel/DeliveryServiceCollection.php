@@ -23,7 +23,11 @@ class DeliveryServiceCollection extends AbstractCollection
 
     /**
      * Initialize collection model.
+     *
+     * @return void
+     *
      * @noinspection MagicMethodsValidityInspection
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     protected function _construct(): void
     {

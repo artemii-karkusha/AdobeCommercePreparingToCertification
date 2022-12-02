@@ -10,6 +10,9 @@ namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model;
 use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ResourceModel\DeliveryServiceResource;
 use Magento\Framework\Model\AbstractModel;
 
+/**
+ * Delivery Service Model
+ */
 class DeliveryServiceModel extends AbstractModel
 {
 
@@ -21,9 +24,12 @@ class DeliveryServiceModel extends AbstractModel
     protected $_eventPrefix = 'delivery_service_model';
 
     /**
-     * Initialize magento model.
+     * Initialize DeliveryService model.
      *
      * @return void
+     *
+     * @noinspection MagicMethodsValidityInspection
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     protected function _construct(): void
     {

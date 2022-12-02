@@ -20,7 +20,10 @@ class CustomRouter implements RouterInterface
     /**
      * @param ActionFactory $actionFactory
      */
-    public function __construct(private ActionFactory $actionFactory) {}
+    public function __construct(
+        private ActionFactory $actionFactory
+    ) {
+    }
 
     /**
      * Validate and Match Cms Page and modify request
@@ -42,6 +45,7 @@ class CustomRouter implements RouterInterface
     }
 
     /**
+     *
      * @param RequestInterface $request
      * @return bool
      */
@@ -51,6 +55,7 @@ class CustomRouter implements RouterInterface
     }
 
     /**
+     *
      * @param RequestHttp $request
      * @return bool
      */
@@ -61,6 +66,7 @@ class CustomRouter implements RouterInterface
     }
 
     /**
+     *
      * @param RequestHttp $request
      * @return void
      */

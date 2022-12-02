@@ -14,7 +14,10 @@ class SimpleClass implements SimpleInterface
     /**
      * @param string $stringParam
      */
-    public function __construct(private string $stringParam = ''){}
+    public function __construct(
+        private string $stringParam = ''
+    ) {
+    }
 
     /**
      * @inheritDoc

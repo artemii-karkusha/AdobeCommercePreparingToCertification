@@ -125,13 +125,14 @@ class Create extends Command
      */
     private function doSomethingIfOptionNoneExist(): void
     {
-        if(!$this->input->getOption(self::EXAMPLE_NONE_OPTION)) {
+        if (!$this->input->getOption(self::EXAMPLE_NONE_OPTION)) {
             return;
         }
         $this->output->writeln('<info>None option has been called</info>');
     }
 
     /**
+     *
      * @param InputInterface $input
      * @param OutputInterface $output
      * @return void

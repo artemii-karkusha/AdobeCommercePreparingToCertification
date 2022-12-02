@@ -57,6 +57,8 @@ class DeliveryServiceBlockActions extends Column
      * @param array $dataSource
      *
      * @return array
+     *
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     public function prepareDataSource(array $dataSource): array
     {

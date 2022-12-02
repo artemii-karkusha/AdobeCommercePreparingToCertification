@@ -13,10 +13,10 @@ use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\App\Action\HttpPostActionInterface;
+use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\Exception\CouldNotDeleteException;
-use Magento\Framework\Exception\NoSuchEntityException;
 
 /**
  * Delete DeliveryService controller.
@@ -56,8 +56,8 @@ class Delete extends Action implements HttpPostActionInterface, HttpGetActionInt
         try {
             $this->deleteByIdCommand->execute($entityId);
             $this->messageManager->addSuccessMessage(__('You have successfully deleted DeliveryService entity'));
-        } catch (CouldNotDeleteException|NoSuchEntityException $exception) {
-            $this->messageManager->addErrorMessage($exception->getMessage());
+        } catch (CouldNotDeleteException $couldNotDeleteException) {
+            $this->messageManager->addErrorMessage($couldNotDeleteException->getMessage());
         }
 
         return $resultRedirect;

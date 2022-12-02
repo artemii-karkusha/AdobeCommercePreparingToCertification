@@ -9,15 +9,22 @@ declare(strict_types=1);
 namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Controller\ActionsResults;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
+use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\Controller\Result\ForwardFactory as ResultForwardFactory;
 
+/**
+ * Controller example with result object the Forward
+ */
 class Forward implements HttpGetActionInterface
 {
     /**
      * @param ResultForwardFactory $resultForwardFactory
      */
-    public function __construct(private ResultForwardFactory $resultForwardFactory) {}
+    public function __construct(
+        private ResultForwardFactory $resultForwardFactory
+    ) {
+    }
 
     /**
      * @inheritDoc

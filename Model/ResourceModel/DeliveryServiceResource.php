@@ -19,8 +19,12 @@ class DeliveryServiceResource extends AbstractDb
 
     /**
      * Initialize resource model.
+     *
+     * @return void
+     *
+     * @noinspection MagicMethodsValidityInspection
      */
-    protected function _construct()
+    protected function _construct(): void
     {
         $this->_init('delivery_service', DeliveryServiceInterface::ENTITY_ID);
         $this->_useIsObjectNew = true;

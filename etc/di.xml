@@ -23,10 +23,10 @@
     <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\SimpleInterface"
                 type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\SimpleClass"/>
 
-    <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface"
-                type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDIUsing"/>
+    <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDiIsUsedInterface"
+                type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDiIsUsed"/>
 
-    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDIUsing">
+    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\ExampleHowDiIsUsed">
         <arguments>
             <!-- Pass simple string -->
             <argument name="stringParam" xsi:type="string">someStringValue</argument>
@@ -35,13 +35,13 @@
             <!-- Pass 1 -->
             <argument name="intParam" xsi:type="number">1</argument>
             <!-- Pass application init argument, named by constant value -->
-            <argument name="globalInitParam" xsi:type="init_parameter">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface::SOME_CONSTANT</argument>
+            <argument name="globalInitParam" xsi:type="init_parameter">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDiIsUsedInterface::SOME_CONSTANT</argument>
             <!-- Pass constant value -->
-            <argument name="constantParam" xsi:type="const">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface::SOME_CONSTANT</argument>
+            <argument name="constantParam" xsi:type="const">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDiIsUsedInterface::SOME_CONSTANT</argument>
             <!-- Pass array -->
             <argument name="arrayParam" xsi:type="array">
                 <!-- First element is value of constant -->
-                <item name="firstElem" xsi:type="const">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface::SOME_CONSTANT</item>
+                <item name="firstElem" xsi:type="const">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDiIsUsedInterface::SOME_CONSTANT</item>
                 <!-- Second element is null -->
                 <item name="secondElem" xsi:type="null"/>
                 <!-- Pass object -->

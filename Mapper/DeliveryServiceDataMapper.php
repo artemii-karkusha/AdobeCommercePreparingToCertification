@@ -23,7 +23,8 @@ class DeliveryServiceDataMapper
      */
     public function __construct(
         private DeliveryServiceInterfaceFactory $entityDtoFactory
-    ) {}
+    ) {
+    }
 
     /**
      * Map magento models to DTO array.

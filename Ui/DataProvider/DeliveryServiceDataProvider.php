@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @author Artemii Karkusha
  * @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/)
@@ -12,6 +13,7 @@ use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Query\DeliveryService\
 use Magento\Framework\Api\FilterBuilder;
 use Magento\Framework\Api\Search\ReportingInterface;
 use Magento\Framework\Api\Search\SearchCriteriaBuilder;
+use Magento\Framework\Api\Search\SearchResultInterface;
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider;
 use Magento\Ui\DataProvider\SearchResultFactory;
@@ -22,19 +24,9 @@ use Magento\Ui\DataProvider\SearchResultFactory;
 class DeliveryServiceDataProvider extends DataProvider
 {
     /**
-     * @var GetListQuery
-     */
-    private $getListQuery;
-
-    /**
-     * @var SearchResultFactory
-     */
-    private $searchResultFactory;
-
-    /**
      * @var array
      */
-    private $loadedData = [];
+    private array $loadedData = [];
 
     /**
      * @param string $name
@@ -57,8 +49,8 @@ class DeliveryServiceDataProvider extends DataProvider
         SearchCriteriaBuilder $searchCriteriaBuilder,
         RequestInterface $request,
         FilterBuilder $filterBuilder,
-        GetListQuery $getListQuery,
-        SearchResultFactory $searchResultFactory,
+        private GetListQuery $getListQuery,
+        private SearchResultFactory $searchResultFactory,
         array $meta = [],
         array $data = []
     ) {
@@ -73,16 +65,14 @@ class DeliveryServiceDataProvider extends DataProvider
             $meta,
             $data
         );
-        $this->getListQuery = $getListQuery;
-        $this->searchResultFactory = $searchResultFactory;
     }
 
     /**
      * Returns searching result.
      *
-     * @return SearchResultFactory
+     * @return SearchResultInterface
      */
-    public function getSearchResult()
+    public function getSearchResult(): SearchResultInterface
     {
         $searchCriteria = $this->getSearchCriteria();
         $result = $this->getListQuery->execute($searchCriteria);

@@ -10,6 +10,10 @@ namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Data;
 use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\Data\DeliveryServiceInterface;
 use Magento\Framework\DataObject;
 
+/**
+ * DTO for model the DeliveryServiceModel
+ * @see DeliveryServiceModel
+ */
 class DeliveryServiceData extends DataObject implements DeliveryServiceInterface
 {
     /**

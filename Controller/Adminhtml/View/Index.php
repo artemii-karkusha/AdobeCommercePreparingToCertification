@@ -12,6 +12,8 @@ use Magento\Backend\App\Action\Context;
 use Magento\Backend\Model\View\Result\Page;
 use Magento\Backend\App\Action;
 use Magento\Framework\App\Action\HttpGetActionInterface;
+use Magento\Framework\App\ResponseInterface;
+use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\View\Result\PageFactory;
 
 class Index extends Action implements HttpGetActionInterface
@@ -37,7 +39,7 @@ class Index extends Action implements HttpGetActionInterface
     /**
      * @inheridoc
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         /** @var Page $resultPage */
         $resultPage = $this->resultPageFactory->create();

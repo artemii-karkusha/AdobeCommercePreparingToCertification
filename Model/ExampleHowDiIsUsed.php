@@ -7,11 +7,14 @@ declare(strict_types=1);
 
 namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model;
 
-use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDIUsingInterface;
+use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\ExampleHowDiIsUsedInterface;
 use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\SimpleInterface;
 use Magento\Framework\DataObject;
 
-class ExampleHowDIUsing implements ExampleHowDIUsingInterface
+/**
+ * Example how DI is used with all injectable types.
+ */
+class ExampleHowDiIsUsed implements ExampleHowDiIsUsedInterface
 {
     /**
      * @param SimpleInterface $objectParam
@@ -21,7 +24,6 @@ class ExampleHowDIUsing implements ExampleHowDIUsingInterface
      * @param string $globalInitParam
      * @param string $constantParam
      * @param array $arrayParam
-     * @param null $optionalParam
      */
     public function __construct(
         private SimpleInterface $objectParam,
@@ -31,7 +33,8 @@ class ExampleHowDIUsing implements ExampleHowDIUsingInterface
         private string $globalInitParam = '',
         private string $constantParam = '',
         private array $arrayParam = [],
-    ) {}
+    ) {
+    }
 
     /**
      * @inheritDoc

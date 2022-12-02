@@ -4,15 +4,21 @@ declare(strict_types=1);
 
 namespace ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\Data;
 
+use ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\DeliveryServiceModel;
+
+/**
+ * DTO for model the DeliveryServiceModel
+ * @see DeliveryServiceModel
+ */
 interface DeliveryServiceInterface
 {
     /**
      * String constants for property names
      */
-    const ENTITY_ID = "entity_id";
-    const NAME = "name";
-    const STATUS = "status";
-    const PHONE = "phone";
+    public const ENTITY_ID = 'entity_id';
+    public const NAME = 'name';
+    public const STATUS = 'status';
+    public const PHONE = 'phone';
 
     /**
      * Getter for EntityId.

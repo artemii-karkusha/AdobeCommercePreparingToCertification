@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @author Artemii Karkusha
  * @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/)
@@ -22,12 +23,12 @@ class ExampleOfButton extends Field
     /**
      * Return element html
      *
-     * @param  AbstractElement $element
+     * @param AbstractElement $element
      * @return string
      *
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
-    protected function _getElementHtml(AbstractElement $element)
+    protected function _getElementHtml(AbstractElement $element): string
     {
         return $this->_toHtml();
     }
@@ -37,7 +38,7 @@ class ExampleOfButton extends Field
      *
      * @return string
      */
-    public function getButtonHtml()
+    public function getButtonHtml(): string
     {
         try {
             $button = $this->getLayout()->createBlock(
@@ -48,11 +49,12 @@ class ExampleOfButton extends Field
                     'label' => __('Field type is button'),
                 ]
             );
-
-
             $getButtonHtml = $button->toHtml();
-
         } catch (LocalizedException $localizedException) {
+            $this->_logger->error(
+                $localizedException->getMessage(),
+                [__CLASS__]
+            );
             $getButtonHtml = '';
         }
 
