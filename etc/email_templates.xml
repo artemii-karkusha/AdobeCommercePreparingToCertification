@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- @author Artemii Karkusha -->
+<!-- @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/) -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="email_example"
+              label="Email example"
+              file="email_example.html"
+              type="html"
+              module="ArtemiiKarkusha_AdobeCommercePreparingToCertification"
+              area="frontend"/>
+</config>

@@ -17,7 +17,7 @@ Please, left a star if was helpful for you. Thank you.
 ### Section 1: Working with Admin (5.2%)
 
  1. Describe how the ACL works with roles and resources.   
- - Examples in Code:  
+ - Code examples:  
    - [acl.xml](etc/acl.xml?plain=1#L9)  
    - [menu.xml](etc/adminhtml/menu.xml?plain=1#L13)  
    - [Controller](Controller/Adminhtml/View/Index.php?plain=1#L19)  
@@ -28,7 +28,7 @@ Please, left a star if was helpful for you. Thank you.
  - Adobe docs:  
    - [Create an access control list (ACL) rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/#step-1-define-the-custom-resources)
  2. Identify the components to use when creating or modifying the admin grid/form  
- - Examples in Code:  
+ - Code examples:  
    - [Create layout with ui_component](view/adminhtml/layout/delivery_service_deliveryservice_index.xml?plain=1#L8)  
    - [Create ui_component the listing](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L7)  
    - [Create ui_component the form](view/adminhtml/ui_component/delivery_service_form.xml?plain=1#L6)  
@@ -39,7 +39,7 @@ Please, left a star if was helpful for you. Thank you.
    - [Add an Admin grid](https://developer.adobe.com/commerce/php/development/components/add-admin-grid/)
 
  3. Identify the files to use when creating a store/admin config and menu items
- - Examples in Code:  
+ - Code examples:  
    - [system.xml](etc/adminhtml/system.xml)  
    - [menu.xml](etc/adminhtml/menu.xml)  
    - [dependsOnConfig](etc/adminhtml/menu.xml?plain=1#L29) *It is very helpful attribute which helps to control visibility of menu item with config.*  
@@ -53,7 +53,7 @@ Please, left a star if was helpful for you. Thank you.
    - [File structures of Module, Theme, Language package](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)  
    - [Magento 2 Folder Structure](https://meetanshi.com/blog/magento-2-folder-structure/)
  2. Describe Magento CLI commands  
- - Examples in Code:
+ - Code examples:
    - [Example console command](Console/Command/DeliveryService/Create.php)
    - [di.xml](etc/di.xml?plain=1#L13)
    ```sh
@@ -65,7 +65,7 @@ Please, left a star if was helpful for you. Thank you.
    - [Create a custom command](https://developer.adobe.com/commerce/php/development/cli-commands/custom/)
    - [Common commands](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/common-cli-commands.html?lang=en)
  3. Describe cron functionality  
- - Examples in Code:
+ - Code examples:
    - [Cron jobs with static and flexible scheduled time](etc/crontab.xml?plain=1#L7)
    - [cron_groups.xml](etc/cron_groups.xml)
  - Docs:
@@ -73,7 +73,7 @@ Please, left a star if was helpful for you. Thank you.
    - [Magento 2 Cron Job: How to Create, Set up, and Configure It in Easy Steps](https://www.cloudways.com/blog/setup-magento-cron-job/)
    - [Disable a cron job](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/crons/custom-cron-reference.html?lang=en#disable-a-cron-job)
  4. Given a scenario, describe usage of the di.xml  
- - Examples in Code:
+ - Code examples:
    - [etc/di.xml - Argument types](etc/di.xml?plain=1#L23) 
    - DI in GLOBAL area
    ![DI in frontend area](docs/images/exampleHowDILokksInGlobalArea.png)
@@ -88,7 +88,7 @@ Please, left a star if was helpful for you. Thank you.
     - [Dependency injection configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#areas-and-application-entry-points)
     - [Sensitive and system-specific configuration settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
  5. Given a scenario, create controllers  
- - Examples in Code:
+ - Code examples:
    - [Create a custom router (di.xml)](etc/di.xml?plain=1#L71)
    - [Create a custom router (Router)](Controller/CustomRouter.php)
    - [Create a controller in admin area (Page)](Controller/Adminhtml/View/Index.php)
@@ -113,7 +113,7 @@ Please, left a star if was helpful for you. Thank you.
  - Docs:
    - [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure) 
  7. Describe index functionality
- - Examples in Code:
+ - Code examples:
    - [Create indexer](etc/indexer.xml)
    - [Create mview config](etc/mview.xml)
    - [Create Mview class](Model/Indexer/DeliveryService.php)
