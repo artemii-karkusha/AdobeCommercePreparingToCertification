@@ -37,7 +37,7 @@ class EmailNotifier implements EmailNotifierInterface
     /**
      * @inheritDoc
      */
-    public function sendEmailTemplate(string $templateIdentifier, string $sendToEmail, string $storeCode): void
+    public function sendEmail(string $templateIdentifier, string $sendToEmail, string $storeCode): void
     {
         try {
             $this->emulation->startEnvironmentEmulation($this->storeManager->getStore($storeCode)->getId());

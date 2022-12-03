@@ -67,7 +67,7 @@ class SendEmail extends Command
         try {
             $this->state->setAreaCode(Area::AREA_FRONTEND);
             $this->checkRequireOptions($input);
-            $this->emailNotifier->sendEmailTemplate(
+            $this->emailNotifier->sendEmail(
                 (string)$input->getOption(self::TEMPLATE_IDENTIFIER_OPTION),
                 (string)$input->getOption(self::SEND_TO_EMAIL_OPTION),
                 (string)$input->getOption(self::STORE_CODE_OPTION)

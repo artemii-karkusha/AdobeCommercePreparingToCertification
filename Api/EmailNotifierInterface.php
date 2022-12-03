@@ -19,5 +19,5 @@ interface EmailNotifierInterface
      *
      * @throws MailException
      */
-    public function sendEmailTemplate(string $templateIdentifier, string $sendToEmail, string $storeCode): void;
+    public function sendEmail(string $templateIdentifier, string $sendToEmail, string $storeCode): void;
 }

@@ -134,7 +134,7 @@ Please, left a star if was helpful for you. Thank you.
        - [Rewrite translate for en_US](i18n/en_US.csv?plain=1#L4)
        - [Rewrite translate for de_DE](i18n/de_DE.csv?plain=1#L2)  
      - Final result for en_US: `ak_preparingtocertification/localization/view`  
-     ![German](docs/images/localizationPhtmldeDE.png) 
+     ![English](docs/images/localizationPhtmldeDE.png) 
      - Final result for de_DE: `ak_preparingtocertification/localization/view`  
      ![German](docs/images/localizationPhtmlenUS.png)
    - Strings added in email templates:
@@ -149,11 +149,18 @@ Please, left a star if was helpful for you. Thank you.
          - [Outputting a string](view/frontend/email/email_example.html?plain=1#L9)
          - [Rewrite translate for en_US](i18n/en_US.csv?plain=1#L6)
          - [Rewrite translate for de_DE](i18n/de_DE.csv?plain=1#L4)
-     - Final result for en_US: 
-  - Docs:
-   - [Translations](https://developer.adobe.com/commerce/frontend-core/guide/translations/)
-   - [Theme strings](https://developer.adobe.com/commerce/frontend-core/guide/translations/theory/)
-   - [Email Localization](https://developer.adobe.com/commerce/frontend-core/guide/templates/email/)
+     
+     ```sh
+     bin/magento preparingToCertification:email:send --template_identifier=email_example --send_to_email="your.email@gmail.com" --store_code=default
+     ```
+     - Final result email for en_US:
+     ![English](docs/images/localizationEnUsEmail.png)
+     - Final result email for en_US:
+     ![German](docs/images/localizationPhtmldeDE.png)
+   - Docs:
+     - [Translations](https://developer.adobe.com/commerce/frontend-core/guide/translations/)
+     - [Theme strings](https://developer.adobe.com/commerce/frontend-core/guide/translations/theory/)
+     - [Email Localization](https://developer.adobe.com/commerce/frontend-core/guide/templates/email/)
  9. Describe plugin, preference, event observers, and interceptors  
  10. Describe custom module routes  
  11. Describe URL rewrites  
