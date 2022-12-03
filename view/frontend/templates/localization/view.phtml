@@ -1,0 +1,21 @@
+<?php
+/**
+ * @author Artemii Karkusha
+ * @copyright Copyright (c) (https://www.linkedin.com/in/artemiy-karkusha/)
+ */
+
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template as Block;
+
+/**
+ * @var Block $block
+ */
+
+$customerName = 'Artemii';
+?>
+
+<p><?= __('Hello Localization') ?></p>
+
+<p><?= __('Hello, %1', $customerName) ?></p>
+
