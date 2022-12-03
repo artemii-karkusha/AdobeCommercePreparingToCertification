@@ -15,6 +15,8 @@
             <argument name="commands" xsi:type="array">
                 <item name="createDeliveryService"
                       xsi:type="object">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Console\Command\DeliveryService\Create</item>
+                <item name="artemiikarkusha_adobecommercepreparingtocertification_send_email"
+                      xsi:type="object">ArtemiiKarkusha\AdobeCommercePreparingToCertification\Console\Command\SendEmail</item>
             </argument>
         </arguments>
     </type>
@@ -79,4 +81,31 @@
             </argument>
         </arguments>
     </type>
+
+    <!--EmailNotifier-->
+    <preference for="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Api\EmailNotifierInterface"
+                type="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Model\Email\EmailNotifier"/>
+
+    <type name="ArtemiiKarkusha\AdobeCommercePreparingToCertification\Console\Command\SendEmail">
+        <arguments>
+            <argument name="options" xsi:type="array">
+                <item name="template_identifier" xsi:type="array">
+                    <item name="optionName" xsi:type="string">template_identifier</item>
+                    <item name="mode" xsi:type="const">Symfony\Component\Console\Input\InputOption::VALUE_REQUIRED</item>
+                    <item name="optionDescription" xsi:type="string">The template identifier which is sent</item>
+                </item>
+                <item name="send_to_email" xsi:type="array">
+                    <item name="optionName" xsi:type="string">send_to_email</item>
+                    <item name="mode" xsi:type="const">Symfony\Component\Console\Input\InputOption::VALUE_REQUIRED</item>
+                    <item name="optionDescription" xsi:type="string">The Email where is sent</item>
+                </item>
+                <item name="store_code" xsi:type="array">
+                    <item name="optionName" xsi:type="string">store_code</item>
+                    <item name="mode" xsi:type="const">Symfony\Component\Console\Input\InputOption::VALUE_REQUIRED</item>
+                    <item name="optionDescription" xsi:type="string">Store code</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!--/EmailNotifier-->
 </config>
