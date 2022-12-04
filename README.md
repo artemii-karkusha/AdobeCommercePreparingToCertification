@@ -153,14 +153,15 @@ Please, left a star if was helpful for you. Thank you.
      ```sh
      bin/magento preparingToCertification:email:send --template_identifier=email_example --send_to_email="your.email@gmail.com" --store_code=default
      ```
-     - Final result email for en_US:
+     - **Final result email for en_US:**
      ![English](docs/images/localizationEnUsEmail.png)
-     - Final result email for en_US:
+     - **Final result email for en_US:**
      ![German](docs/images/localizationPhtmldeDE.png)
-   - Docs:
-     - [Translations](https://developer.adobe.com/commerce/frontend-core/guide/translations/)
-     - [Theme strings](https://developer.adobe.com/commerce/frontend-core/guide/translations/theory/)
-     - [Email Localization](https://developer.adobe.com/commerce/frontend-core/guide/templates/email/)
+   - [Strings added in UI components configuration files](view/adminhtml/ui_component/delivery_service_listing.xml?plain=1#L18)
+ - **Docs:**
+   - [Translations](https://developer.adobe.com/commerce/frontend-core/guide/translations/)
+   - [Theme strings](https://developer.adobe.com/commerce/frontend-core/guide/translations/theory/)
+   - [Email Localization](https://developer.adobe.com/commerce/frontend-core/guide/templates/email/)
  9. Describe plugin, preference, event observers, and interceptors  
  10. Describe custom module routes  
  11. Describe URL rewrites  
