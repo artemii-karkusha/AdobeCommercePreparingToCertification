@@ -74,14 +74,14 @@ Please, left a star if was helpful for you. Thank you.
    - [Disable a cron job](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/crons/custom-cron-reference.html?lang=en#disable-a-cron-job)
  4. Given a scenario, describe usage of the di.xml  
  - Code examples:
-   - [etc/di.xml - Argument types](etc/di.xml?plain=1#L23) 
+   - [etc/di.xml - Argument types](etc/di.xml?plain=1#L25) 
    - DI in GLOBAL area
    ![DI in frontend area](docs/images/exampleHowDILokksInGlobalArea.png)
-   - [Virtual Type](etc/frontend/di.xml?plain=1#L8)
+   - [Virtual Type](etc/frontend/di.xml?plain=1#L)
    - [Override arguments for Frontend Area](etc/frontend/di.xml?plain=1#L17)
    - DI in FRONTEND area
    ![DI in frontend area](docs/images/exampleHowDILooksInFrontendArea.png)
-   - [Sensitive and system-specific configuration settings](etc/di.xml?plain=1#L58)
+   - [Sensitive and system-specific configuration settings](etc/di.xml?plain=1#L61)
   - Docs:
     - [Dependency injection](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) 
     - [Code Complier](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html)
@@ -89,7 +89,7 @@ Please, left a star if was helpful for you. Thank you.
     - [Sensitive and system-specific configuration settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)
  5. Given a scenario, create controllers  
  - Code examples:
-   - [Create a custom router (di.xml)](etc/di.xml?plain=1#L71)
+   - [Create a custom router (di.xml)](etc/di.xml?plain=1#L73)
    - [Create a custom router (Router)](Controller/CustomRouter.php)
    - [Create a controller in admin area (Page)](Controller/Adminhtml/View/Index.php)
    - [Create a controller in frontend area (Magento\Framework\Controller\Result\Raw)](Controller/Di/Example.php)
