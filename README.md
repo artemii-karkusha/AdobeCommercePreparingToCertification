@@ -202,6 +202,11 @@ Please, left a star if was helpful for you. Thank you.
 ### Section 7: Adobe Commerce Cloud architecture (11.7%)
 
  1. Define Adobe Commerce architecture/environment workflow  
+ - Docs:
+   - [Starter architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html?lang=en)
+   - [Starter project workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=en)
+   - [Pro architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en)
+   - [Pro project workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=en)
  2. Describe cloud project files, permission, and structure  
  3. List services available on Adobe Commerce on Cloud  
  4. Describe how to access different types of logs  
